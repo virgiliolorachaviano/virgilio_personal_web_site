@@ -1,171 +1,121 @@
-# 🎨 Portfolio Personal de Virgilio
+# Portfolio Support — Virgilio Lora Chaviano
 
-Un sitio web personal moderno y responsive para mostrar habilidades en arte, tecnología y programación.
+Repositorio de apoyo para el sitio personal en Hostinger. Incluye una versión one-page con el copy definitivo y una estética minimal tech (dark charcoal + acento turquesa-violeta).
 
-## ✨ Características
+## Secciones del sitio
+- Hero
+- Sobre mí
+- Skills / Toolset
+- Portfolio (6 items)
+- Contacto
+- Footer
 
-### 🎯 Diseño Moderno
-- Diseño completamente responsive para todos los dispositivos
-- Gradientes modernos y efectos visuales atractivos
-- Animaciones suaves y transiciones fluidas
-- Interfaz de usuario intuitiva y elegante
+## Cómo usar
+1. Abre `index.html` en tu navegador.
+2. Ajusta textos y links directamente en el HTML si quieres personalizar.
 
-### 🔧 Funcionalidades Interactivas
-- **Navegación móvil**: Menú hamburguesa animado
-- **Scroll suave**: Navegación fluida entre secciones
-- **Barras de habilidades animadas**: Se animan al entrar en vista
-- **Filtro de portfolio**: Categorización dinámica de proyectos
-- **Formulario de contacto**: Con validación y notificaciones
-- **Efectos de parallax**: Movimiento sutil en el hero
-- **Cursor interactivo**: Efectos de ripple al hacer clic
+## Actualizar portfolio
+Edita los `<article class="portfolio-card">` dentro de la sección `#portfolio` en `index.html`. Cada item tiene:
+- Título
+- Línea técnica
+- Tags
+- Botón “Ver”
 
-### 📱 Secciones Incluidas
-1. **Hero**: Presentación impactante con llamadas a la acción
-2. **Sobre mí**: Información personal y estadísticas
-3. **Habilidades**: Categorías organizadas con barras de progreso
-4. **Portfolio**: Galería filtrable de proyectos
-5. **Contacto**: Formulario funcional e información de contacto
-6. **Footer**: Información de derechos y enlaces sociales
+## Estructura recomendada
+- `assets/img`: imágenes finales
+- `assets/reel`: videos y reel
 
-## 🚀 Cómo Usar
+## Links oficiales
+- Email: `virgiliolorachaviano@gmail.com`
+- LinkedIn: https://www.linkedin.com/in/virgiliolorachaviano
+- ArtStation: https://www.artstation.com/virgiliolorachaviano_vili
+- Sora: `@virgiliolorachaviano`
 
-### Instalación
-1. Clona este repositorio o descarga los archivos
-2. Abre `index.html` en tu navegador
-3. ¡Listo! El sitio está funcionando
+## Prompt Hostinger AI Website Builder
+```
+Crea un sitio web personal (one-page) en español, moderno y minimalista, para:
 
-### Personalización
+Nombre: Virgilio Lora Chaviano
+Rol principal: Houdini Technical Artist · Procedural FX
+Enfoque secundario: Programming · Real-Time/CG Pipelines · AI-Driven Workflows
 
-#### 📝 Contenido Personal
-Edita el archivo `index.html` para personalizar:
-- Nombre y información personal
-- Descripción y biografía
-- Habilidades y niveles de experiencia
-- Proyectos del portfolio
-- Información de contacto
+Objetivo del sitio:
+Mostrar mi reel/portfolio de FX (Houdini), mis habilidades técnicas, y facilitar contacto profesional.
 
-#### 🎨 Estilos Visuales
-Modifica `styles.css` para cambiar:
-- Colores principales (busca las variables de color)
-- Gradientes y efectos visuales
-- Tipografías y espaciado
-- Animaciones y transiciones
+Estructura obligatoria (en este orden):
+1) HERO (sección principal):
+- Título grande: “Virgilio Lora Chaviano”
+- Subtítulo: “Houdini Technical Artist · Procedural FX”
+- Texto corto (2–3 líneas) con tono calmado y preciso:
+  “Construyo efectos visuales procedurales con Houdini: simulaciones, sistemas y pipelines.
+   Trabajo con enfoque técnico y sensibilidad artística, cuidando timing, lectura y narrativa visual.”
+- Botones: “Ver Reel/Portfolio” y “Contactar”
+- Estética: limpia, high-end, con sensación tecnológica sutil (sin saturación).
 
-#### ⚙️ Funcionalidades
-Personaliza `script.js` para:
-- Agregar nuevas animaciones
-- Modificar comportamientos interactivos
-- Integrar con APIs reales
-- Añadir nuevas funcionalidades
+2) SOBRE MÍ:
+- Dos párrafos:
+  - 1) Enfoque: Houdini, FX, proceduralidad, dirección artística técnica.
+  - 2) Valor: rapidez de iteración, pipeline thinking, programación, y uso responsable de IA para acelerar workflows.
 
-## 🛠️ Tecnologías Utilizadas
+3) SKILLS / TOOLSET:
+- Lista clara por categorías:
+  - Houdini: Vellum, FLIP, Pyro, RBD, Particles, PDG
+  - Render: Arnold, Redshift
+  - Compositing: Nuke (AOVs/passes)
+  - Tracking: camera/object tracking
+  - Programming: scripting/pipeline automation
+  - AI Workflows: herramientas y automatización creativa
 
-### Frontend
-- **HTML5**: Estructura semántica y accesible
-- **CSS3**: Estilos modernos con Grid y Flexbox
-- **JavaScript ES6+**: Interactividad y animaciones
-- **Font Awesome**: Iconografía profesional
-- **Google Fonts**: Tipografía Inter
+4) PORTFOLIO (grid de 6 items):
+Cada item con: título, 1 línea técnica, tags, y si es posible un botón “Ver”.
+Usa ejemplos de trabajos tipo:
+- Vellum Cloth Tear + Burn-Edge Reveal (Arnold)
+- Pyro Fire/Smoke (Arnold)
+- PDG-driven Multi-shot Bullet Impacts (RBD/Pyro/Particles, Arnold/Deadline, Nuke)
+- FLIP Orange Juice Fill + Splash Payoff (Redshift)
+- Full-CG Destruction (RBD + Pyro + Debris, Redshift)
+- Water FX for Dolphin Breach (FLIP + Spray + Foam/Bubbles)
 
-### Características Técnicas
-- **Responsive Design**: Mobile-first approach
-- **Intersection Observer**: Animaciones basadas en scroll
-- **CSS Grid & Flexbox**: Layouts modernos y flexibles
-- **Smooth Scrolling**: Navegación fluida
-- **Form Validation**: Validación de formularios
-- **Progressive Enhancement**: Funciona sin JavaScript
+5) CONTACTO:
+Mostrar claramente:
+- Email: virgiliolorachaviano@gmail.com
+- LinkedIn: www.linkedin.com/in/virgiliolorachaviano
+- ArtStation: www.artstation.com/virgiliolorachaviano_vili
+- Sora: @virgiliolorachaviano
 
-## 📊 Rendimiento
+6) FOOTER:
+- “© Virgilio Lora Chaviano — All rights reserved.”
+- Estilo minimal.
 
-### Optimizaciones Incluidas
-- ✅ Carga asíncrona de recursos
-- ✅ Animaciones CSS optimizadas
-- ✅ Imágenes placeholder para carga rápida
-- ✅ Código JavaScript eficiente
-- ✅ CSS minificado y organizado
+Estilo visual:
+- Minimalista, moderno, elegante, con aire “studio / tech”.
+- Fondo oscuro carbón o muy claro (elige una opción, pero prioriza legibilidad).
+- Acento turquesa-violeta muy sutil en botones/links.
+- Tipografía moderna y legible (estilo Inter / similar).
+- Mucho espacio en blanco/aire, grid limpio, responsive mobile-first.
+- Animaciones mínimas: hover sutil, scroll suave, nada recargado.
 
-### Métricas
-- **Tiempo de carga**: < 2 segundos
-- **Puntuación Lighthouse**: 90+
-- **Compatibilidad**: Todos los navegadores modernos
-- **Responsividad**: Dispositivos desde 320px
-
-## 🎯 Personalización Rápida
-
-### Cambiar Colores Principales
-```css
-/* En styles.css, busca y modifica: */
-:root {
-    --primary-color: #667eea;
-    --secondary-color: #764ba2;
-    --accent-color: #ffd700;
-}
+Tono del texto:
+Profesional, claro, cercano; calmado, preciso, sin exageración.
 ```
 
-### Añadir Nueva Habilidad
-```html
-<!-- En index.html, añade dentro de .skill-list: -->
-<div class="skill-item">
-    <span class="skill-name">Nueva Habilidad</span>
-    <div class="skill-bar">
-        <div class="skill-progress" data-width="85%"></div>
-    </div>
-</div>
-```
+## Textos definitivos
 
-### Agregar Proyecto al Portfolio
-```html
-<!-- En index.html, añade dentro de .portfolio-grid: -->
-<div class="portfolio-item" data-category="web">
-    <div class="portfolio-image">
-        <div class="image-placeholder">
-            <i class="fas fa-globe"></i>
-        </div>
-        <div class="portfolio-overlay">
-            <h3>Nuevo Proyecto</h3>
-            <p>Descripción del proyecto</p>
-            <div class="portfolio-links">
-                <a href="#" class="portfolio-link"><i class="fas fa-eye"></i></a>
-                <a href="#" class="portfolio-link"><i class="fas fa-code"></i></a>
-            </div>
-        </div>
-    </div>
-</div>
-```
+### HERO
+Virgilio Lora Chaviano  
+Houdini Technical Artist · Procedural FX  
+Construyo efectos visuales procedurales con Houdini: simulaciones, sistemas y pipelines.  
+Trabajo con enfoque técnico y sensibilidad artística, cuidando timing, lectura y narrativa visual.
 
-## 📞 Contacto y Soporte
+CTAs: Ver Reel/Portfolio · Contactar
 
-### Información de Contacto
-- **Email**: virgilio@ejemplo.com
-- **Teléfono**: +1 (555) 123-4567
-- **Ubicación**: Ciudad, País
+### ABOUT (2 párrafos)
+Soy Houdini Technical Artist enfocado en FX procedurales: Vellum, FLIP, Pyro, RBD, partículas y PDG. Me interesa que cada efecto sea claro, controlable y con intención visual: desde lo físico (sim) hasta el look final.
 
-### Redes Sociales
-- LinkedIn: [Perfil](https://linkedin.com)
-- GitHub: [Repositorio](https://github.com)
-- Twitter: [@usuario](https://twitter.com)
-- Instagram: [@usuario](https://instagram.com)
+Trabajo con mentalidad de pipeline: automatización, programación y optimización de iteraciones para entregar múltiples planos con consistencia. Integro herramientas modernas —incluyendo flujos asistidos por IA— para acelerar procesos sin perder el control artístico.
 
-## 📄 Licencia
-
-Este proyecto está bajo la Licencia MIT. Puedes usarlo libremente para proyectos personales o comerciales.
-
-## 🤝 Contribuir
-
-¡Las contribuciones son bienvenidas! Si tienes ideas para mejorar el sitio:
-
-1. Fork el repositorio
-2. Crea una rama para tu feature
-3. Commitea tus cambios
-4. Abre un Pull Request
-
-## 🎉 Créditos
-
-- Desarrollado con ❤️ por Virgilio
-- Iconos por [Font Awesome](https://fontawesome.com)
-- Fuentes por [Google Fonts](https://fonts.google.com)
-- Inspiración de la comunidad de desarrolladores
-
----
-
-**¡Gracias por visitar mi portfolio! 🚀**
+### CONTACT (final)
+Email: virgiliolorachaviano@gmail.com  
+LinkedIn: www.linkedin.com/in/virgiliolorachaviano  
+ArtStation: www.artstation.com/virgiliolorachaviano_vili  
+Sora: @virgiliolorachaviano

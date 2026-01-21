@@ -3,398 +3,213 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Virgilio - Portfolio Personal</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Virgilio Lora Chaviano | Houdini Technical Artist</title>
+    <meta name="description" content="Houdini Technical Artist especializado en FX procedurales, simulaciones y pipelines para VFX y CG.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <a href="#home">Virgilio</a>
-            </div>
-            <ul class="nav-menu">
-                <li class="nav-item">
-                    <a href="#home" class="nav-link">Inicio</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#about" class="nav-link">Sobre mí</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#skills" class="nav-link">Habilidades</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#portfolio" class="nav-link">Portfolio</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#contact" class="nav-link">Contacto</a>
-                </li>
-            </ul>
-            <div class="nav-toggle">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="logo" href="#home">Virgilio Lora Chaviano</a>
+            <button class="nav-toggle" type="button" aria-controls="primary-nav" aria-expanded="false">
+                <span class="nav-toggle__label">Menú</span>
+                <span class="nav-toggle__bars" aria-hidden="true"></span>
+            </button>
+            <nav id="primary-nav" class="nav-links" aria-label="Navegación principal">
+                <a href="#about">Sobre mí</a>
+                <a href="#skills">Skills</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#contact">Contacto</a>
+            </nav>
         </div>
-    </nav>
+    </header>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-container">
-            <div class="hero-content">
-                <h1 class="hero-title">
-                    Hola, soy <span class="highlight">Virgilio</span>
-                </h1>
-                <p class="hero-subtitle">
-                    Artista Digital • Desarrollador • Creativo Tecnológico
+    <main>
+        <section id="home" class="hero section">
+            <div class="container hero-content">
+                <p class="eyebrow">Houdini Technical Artist · Procedural FX</p>
+                <h1>Virgilio Lora Chaviano</h1>
+                <p class="hero-text">
+                    Construyo efectos visuales procedurales con Houdini: simulaciones, sistemas y pipelines.
                 </p>
-                <p class="hero-description">
-                    Combinando arte, tecnología y programación para crear experiencias digitales únicas
+                <p class="hero-text">
+                    Trabajo con enfoque técnico y sensibilidad artística, cuidando timing, lectura y narrativa visual.
                 </p>
-                <div class="hero-buttons">
-                    <a href="#portfolio" class="btn btn-primary">Ver Portfolio</a>
-                    <a href="#contact" class="btn btn-secondary">Contactar</a>
+                <div class="hero-actions">
+                    <a class="btn btn-primary" href="#portfolio">Ver Reel/Portfolio</a>
+                    <a class="btn btn-ghost" href="#contact">Contactar</a>
                 </div>
             </div>
-            <div class="hero-image">
-                <div class="hero-avatar">
-                    <i class="fas fa-user-circle"></i>
-                </div>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Sobre mí</h2>
-                <p class="section-subtitle">Conoce mi historia y pasión</p>
-            </div>
-            <div class="about-content">
+        <section id="about" class="section">
+            <div class="container">
+                <h2>Sobre mí</h2>
                 <div class="about-text">
                     <p>
-                        Soy un apasionado del arte digital y la tecnología. Mi enfoque único combina 
-                        creatividad artística con habilidades técnicas avanzadas para crear proyectos 
-                        que inspiran y funcionan perfectamente.
+                        Soy Houdini Technical Artist enfocado en FX procedurales: Vellum, FLIP, Pyro, RBD, partículas y PDG.
+                        Me interesa que cada efecto sea claro, controlable y con intención visual: desde lo físico (sim)
+                        hasta el look final.
                     </p>
                     <p>
-                        Con experiencia en desarrollo web, diseño digital y programación, me especializo 
-                        en crear soluciones innovadoras que conectan el mundo artístico con la tecnología moderna.
+                        Trabajo con mentalidad de pipeline: automatización, programación y optimización de iteraciones para
+                        entregar múltiples planos con consistencia. Integro herramientas modernas —incluyendo flujos asistidos
+                        por IA— para acelerar procesos sin perder el control artístico.
                     </p>
-                    <div class="about-stats">
-                        <div class="stat">
-                            <span class="stat-number">3+</span>
-                            <span class="stat-label">Años de experiencia</span>
-                        </div>
-                        <div class="stat">
-                            <span class="stat-number">50+</span>
-                            <span class="stat-label">Proyectos completados</span>
-                        </div>
-                        <div class="stat">
-                            <span class="stat-number">100%</span>
-                            <span class="stat-label">Satisfacción del cliente</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="about-image">
-                    <div class="image-placeholder">
-                        <i class="fas fa-palette"></i>
-                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="skills">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Habilidades</h2>
-                <p class="section-subtitle">Tecnologías y herramientas que domino</p>
-            </div>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3 class="category-title">
-                        <i class="fas fa-code"></i>
-                        Programación
-                    </h3>
-                    <div class="skill-list">
-                        <div class="skill-item">
-                            <span class="skill-name">JavaScript</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-width="90%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">Python</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-width="85%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">React</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-width="80%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">Node.js</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-width="75%"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3 class="category-title">
-                        <i class="fas fa-paint-brush"></i>
-                        Arte Digital
-                    </h3>
-                    <div class="skill-list">
-                        <div class="skill-item">
-                            <span class="skill-name">Photoshop</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-width="95%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">Illustrator</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-width="90%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">Blender</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-width="70%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">After Effects</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-width="65%"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3 class="category-title">
-                        <i class="fas fa-laptop-code"></i>
-                        Desarrollo Web
-                    </h3>
-                    <div class="skill-list">
-                        <div class="skill-item">
-                            <span class="skill-name">HTML/CSS</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-width="95%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">Responsive Design</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-width="90%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">UI/UX Design</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-width="85%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">WordPress</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-width="80%"></div>
-                            </div>
-                        </div>
-                    </div>
+        <section id="skills" class="section section-alt">
+            <div class="container">
+                <h2>Skills / Toolset</h2>
+                <div class="skills-grid">
+                    <article class="skill-card">
+                        <h3>Houdini</h3>
+                        <p>Vellum, FLIP, Pyro, RBD, Particles, PDG</p>
+                    </article>
+                    <article class="skill-card">
+                        <h3>Render</h3>
+                        <p>Arnold, Redshift</p>
+                    </article>
+                    <article class="skill-card">
+                        <h3>Compositing</h3>
+                        <p>Nuke (AOVs/passes)</p>
+                    </article>
+                    <article class="skill-card">
+                        <h3>Tracking</h3>
+                        <p>Camera/Object Tracking</p>
+                    </article>
+                    <article class="skill-card">
+                        <h3>Programming</h3>
+                        <p>Scripting y automatización de pipelines</p>
+                    </article>
+                    <article class="skill-card">
+                        <h3>AI Workflows</h3>
+                        <p>Herramientas y automatización creativa</p>
+                    </article>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Portfolio</h2>
-                <p class="section-subtitle">Algunos de mis proyectos destacados</p>
-            </div>
-            <div class="portfolio-filter">
-                <button class="filter-btn active" data-filter="all">Todos</button>
-                <button class="filter-btn" data-filter="web">Web</button>
-                <button class="filter-btn" data-filter="art">Arte</button>
-                <button class="filter-btn" data-filter="mobile">Mobile</button>
-            </div>
-            <div class="portfolio-grid">
-                <div class="portfolio-item" data-category="web">
-                    <div class="portfolio-image">
-                        <div class="image-placeholder">
-                            <i class="fas fa-globe"></i>
+        <section id="portfolio" class="section">
+            <div class="container">
+                <h2>Portfolio</h2>
+                <div class="portfolio-grid">
+                    <article class="portfolio-card">
+                        <div class="portfolio-header">
+                            <h3>Vellum Cloth Tear + Burn-Edge Reveal</h3>
+                            <p class="portfolio-line">Cloth tearing procedural con burn-edge y look final en Arnold.</p>
                         </div>
-                        <div class="portfolio-overlay">
-                            <h3>E-commerce Platform</h3>
-                            <p>Plataforma de comercio electrónico moderna</p>
-                            <div class="portfolio-links">
-                                <a href="#" class="portfolio-link"><i class="fas fa-eye"></i></a>
-                                <a href="#" class="portfolio-link"><i class="fas fa-code"></i></a>
-                            </div>
+                        <div class="tag-list">
+                            <span class="tag">Vellum</span>
+                            <span class="tag">Arnold</span>
+                            <span class="tag">Procedural FX</span>
                         </div>
-                    </div>
-                </div>
-                <div class="portfolio-item" data-category="art">
-                    <div class="portfolio-image">
-                        <div class="image-placeholder">
-                            <i class="fas fa-palette"></i>
+                        <a class="btn btn-ghost btn-sm" href="https://www.artstation.com/virgiliolorachaviano_vili" target="_blank" rel="noopener noreferrer">Ver</a>
+                    </article>
+                    <article class="portfolio-card">
+                        <div class="portfolio-header">
+                            <h3>Pyro Fire/Smoke</h3>
+                            <p class="portfolio-line">Simulación Pyro con control de combustión, densidad y look en Arnold.</p>
                         </div>
-                        <div class="portfolio-overlay">
-                            <h3>Digital Art Collection</h3>
-                            <p>Colección de arte digital conceptual</p>
-                            <div class="portfolio-links">
-                                <a href="#" class="portfolio-link"><i class="fas fa-eye"></i></a>
-                                <a href="#" class="portfolio-link"><i class="fas fa-heart"></i></a>
-                            </div>
+                        <div class="tag-list">
+                            <span class="tag">Pyro</span>
+                            <span class="tag">Arnold</span>
+                            <span class="tag">Volumes</span>
                         </div>
-                    </div>
-                </div>
-                <div class="portfolio-item" data-category="web">
-                    <div class="portfolio-image">
-                        <div class="image-placeholder">
-                            <i class="fas fa-chart-line"></i>
+                        <a class="btn btn-ghost btn-sm" href="https://www.artstation.com/virgiliolorachaviano_vili" target="_blank" rel="noopener noreferrer">Ver</a>
+                    </article>
+                    <article class="portfolio-card">
+                        <div class="portfolio-header">
+                            <h3>PDG-driven Multi-shot Bullet Impacts</h3>
+                            <p class="portfolio-line">Pipeline PDG para impactos multi-shot (RBD/Pyro/Particles) con outputs para Nuke.</p>
                         </div>
-                        <div class="portfolio-overlay">
-                            <h3>Analytics Dashboard</h3>
-                            <p>Dashboard interactivo de análisis de datos</p>
-                            <div class="portfolio-links">
-                                <a href="#" class="portfolio-link"><i class="fas fa-eye"></i></a>
-                                <a href="#" class="portfolio-link"><i class="fas fa-code"></i></a>
-                            </div>
+                        <div class="tag-list">
+                            <span class="tag">PDG</span>
+                            <span class="tag">RBD</span>
+                            <span class="tag">Pyro</span>
+                            <span class="tag">Deadline</span>
+                            <span class="tag">Nuke</span>
                         </div>
-                    </div>
-                </div>
-                <div class="portfolio-item" data-category="mobile">
-                    <div class="portfolio-image">
-                        <div class="image-placeholder">
-                            <i class="fas fa-mobile-alt"></i>
+                        <a class="btn btn-ghost btn-sm" href="https://www.artstation.com/virgiliolorachaviano_vili" target="_blank" rel="noopener noreferrer">Ver</a>
+                    </article>
+                    <article class="portfolio-card">
+                        <div class="portfolio-header">
+                            <h3>FLIP Orange Juice Fill + Splash Payoff</h3>
+                            <p class="portfolio-line">Simulación FLIP de llenado y splash con shading en Redshift.</p>
                         </div>
-                        <div class="portfolio-overlay">
-                            <h3>Mobile App Design</h3>
-                            <p>Diseño de aplicación móvil innovadora</p>
-                            <div class="portfolio-links">
-                                <a href="#" class="portfolio-link"><i class="fas fa-eye"></i></a>
-                                <a href="#" class="portfolio-link"><i class="fas fa-download"></i></a>
-                            </div>
+                        <div class="tag-list">
+                            <span class="tag">FLIP</span>
+                            <span class="tag">Redshift</span>
+                            <span class="tag">Liquids</span>
                         </div>
-                    </div>
-                </div>
-                <div class="portfolio-item" data-category="art">
-                    <div class="portfolio-image">
-                        <div class="image-placeholder">
-                            <i class="fas fa-cube"></i>
+                        <a class="btn btn-ghost btn-sm" href="https://www.artstation.com/virgiliolorachaviano_vili" target="_blank" rel="noopener noreferrer">Ver</a>
+                    </article>
+                    <article class="portfolio-card">
+                        <div class="portfolio-header">
+                            <h3>Full-CG Destruction</h3>
+                            <p class="portfolio-line">Destrucción full-CG con RBD, Pyro y debris controlado.</p>
                         </div>
-                        <div class="portfolio-overlay">
-                            <h3>3D Art Installation</h3>
-                            <p>Instalación de arte 3D interactiva</p>
-                            <div class="portfolio-links">
-                                <a href="#" class="portfolio-link"><i class="fas fa-eye"></i></a>
-                                <a href="#" class="portfolio-link"><i class="fas fa-vr-cardboard"></i></a>
-                            </div>
+                        <div class="tag-list">
+                            <span class="tag">RBD</span>
+                            <span class="tag">Pyro</span>
+                            <span class="tag">Debris</span>
+                            <span class="tag">Redshift</span>
                         </div>
-                    </div>
-                </div>
-                <div class="portfolio-item" data-category="web">
-                    <div class="portfolio-image">
-                        <div class="image-placeholder">
-                            <i class="fas fa-blog"></i>
+                        <a class="btn btn-ghost btn-sm" href="https://www.artstation.com/virgiliolorachaviano_vili" target="_blank" rel="noopener noreferrer">Ver</a>
+                    </article>
+                    <article class="portfolio-card">
+                        <div class="portfolio-header">
+                            <h3>Water FX for Dolphin Breach</h3>
+                            <p class="portfolio-line">Agua y spray con FLIP, foam y bubbles para salto de delfín.</p>
                         </div>
-                        <div class="portfolio-overlay">
-                            <h3>Creative Blog</h3>
-                            <p>Blog personal con diseño único</p>
-                            <div class="portfolio-links">
-                                <a href="#" class="portfolio-link"><i class="fas fa-eye"></i></a>
-                                <a href="#" class="portfolio-link"><i class="fas fa-code"></i></a>
-                            </div>
+                        <div class="tag-list">
+                            <span class="tag">FLIP</span>
+                            <span class="tag">Spray</span>
+                            <span class="tag">Foam/Bubbles</span>
                         </div>
-                    </div>
+                        <a class="btn btn-ghost btn-sm" href="https://www.artstation.com/virgiliolorachaviano_vili" target="_blank" rel="noopener noreferrer">Ver</a>
+                    </article>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Contacto</h2>
-                <p class="section-subtitle">¿Tienes un proyecto en mente? ¡Hablemos!</p>
-            </div>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-envelope"></i>
-                        </div>
-                        <div class="contact-details">
-                            <h3>Email</h3>
-                            <p>virgilio@ejemplo.com</p>
-                        </div>
+        <section id="contact" class="section section-alt">
+            <div class="container">
+                <h2>Contacto</h2>
+                <div class="contact-grid">
+                    <div class="contact-card">
+                        <span class="contact-label">Email</span>
+                        <a href="mailto:virgiliolorachaviano@gmail.com">virgiliolorachaviano@gmail.com</a>
                     </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-phone"></i>
-                        </div>
-                        <div class="contact-details">
-                            <h3>Teléfono</h3>
-                            <p>+1 (555) 123-4567</p>
-                        </div>
+                    <div class="contact-card">
+                        <span class="contact-label">LinkedIn</span>
+                        <a href="https://www.linkedin.com/in/virgiliolorachaviano" target="_blank" rel="noopener noreferrer">
+                            www.linkedin.com/in/virgiliolorachaviano
+                        </a>
                     </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-map-marker-alt"></i>
-                        </div>
-                        <div class="contact-details">
-                            <h3>Ubicación</h3>
-                            <p>Ciudad, País</p>
-                        </div>
+                    <div class="contact-card">
+                        <span class="contact-label">ArtStation</span>
+                        <a href="https://www.artstation.com/virgiliolorachaviano_vili" target="_blank" rel="noopener noreferrer">
+                            www.artstation.com/virgiliolorachaviano_vili
+                        </a>
                     </div>
-                    <div class="social-links">
-                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <div class="contact-card">
+                        <span class="contact-label">Sora</span>
+                        <span class="contact-value">@virgiliolorachaviano</span>
                     </div>
                 </div>
-                <div class="contact-form">
-                    <form id="contactForm">
-                        <div class="form-group">
-                            <input type="text" id="name" name="name" placeholder="Tu nombre" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" id="email" name="email" placeholder="Tu email" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="text" id="subject" name="subject" placeholder="Asunto" required>
-                        </div>
-                        <div class="form-group">
-                            <textarea id="message" name="message" rows="5" placeholder="Tu mensaje" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Enviar mensaje</button>
-                    </form>
-                </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
-    <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <div class="footer-content">
-                <p>&copy; 2024 Virgilio. Todos los derechos reservados.</p>
-                <p>Hecho con <span class="heart">❤️</span> y mucha creatividad</p>
-            </div>
+            <p>© Virgilio Lora Chaviano — All rights reserved.</p>
         </div>
     </footer>
 
